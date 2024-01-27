@@ -1,0 +1,29 @@
+@import '../base//variables';
+@import '../base/mixins';
+
+.navbar {
+  &-container {
+    @include flexbox(space-between, 0) ;
+    padding: 24px 0;
+  }
+
+  &-left {
+    @include flexbox(flex-start, 41px);
+  }
+
+  &-menu {
+    @include flexbox(flex-start, 43px);
+
+    & a {
+      color: $text-darker;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%;
+    }
+  }
+
+  &-right {
+    @include flexbox(flex-start, 12.5px);
+  }
+}
