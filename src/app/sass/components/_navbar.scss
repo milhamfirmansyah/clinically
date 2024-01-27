@@ -3,12 +3,30 @@
 
 .navbar {
   &-container {
-    @include flexbox(space-between, 0) ;
+    @include flexbox(flex-start, 41px);
     padding: 24px 0;
   }
 
-  &-left {
-    @include flexbox(flex-start, 41px);
+  &-menu-container {
+    @include flexbox(space-between, 0);
+    width: 100%;
+    transition: all 0.5s;
+
+    &-open {
+      display: flex;
+      flex-direction: column-reverse;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $base-white;
+      gap: 40px;
+      width: 70%;
+      height: 100%;
+      justify-content: flex-end;
+      padding: 36px 42px;
+      transform: translateX(0);
+      transition: all 0.5s;
+    }
   }
 
   &-menu {
@@ -25,5 +43,47 @@
 
   &-right {
     @include flexbox(flex-start, 12.5px);
+  }
+
+  &-menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .navbar-container {
+    justify-content: space-between;
+  }
+
+  .navbar-menu-container {
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $base-white;
+    gap: 40px;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 36px 48px;
+    transform: translateX(-100%);
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  .navbar-menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
   }
 }
