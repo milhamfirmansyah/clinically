@@ -2,15 +2,26 @@
 @import '../base/mixins';
 
 .navbar {
+  &-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background-color: $brand-tertiary;
+    padding: 24px 0;
+  }
+
   &-container {
     @include flexbox(flex-start, 41px);
-    padding: 24px 0;
+    max-width: 83.8888%;
+    margin: 0 auto;
   }
 
   &-menu-container {
     @include flexbox(space-between, 0);
     width: 100%;
     transition: all 0.5s;
+    z-index: 90;
 
     &-open {
       display: flex;
@@ -18,7 +29,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: $base-white;
+      background-color: $brand-tertiary;
       gap: 40px;
       width: 70%;
       height: 100%;
@@ -26,6 +37,8 @@
       padding: 36px 42px;
       transform: translateX(0);
       transition: all 0.5s;
+      z-index: 90;
+      height: 100vh;
     }
   }
 
@@ -47,6 +60,25 @@
 
   &-menu-icon {
     display: none;
+    width: 24px;
+  }
+
+  &-menu-close-background{
+    display: none;
+  }
+
+  &-menu-open-background{
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba($color: #000000, $alpha: .6);
+    z-index: 70;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .navbar-container {
+    max-width: 87.2%;
   }
 }
 
@@ -60,13 +92,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $base-white;
+    background-color: $brand-tertiary;
     gap: 40px;
     width: 70%;
     height: 100%;
     justify-content: flex-end;
+    align-items: flex-start;
     padding: 36px 48px;
     transform: translateX(-100%);
+    height: 100vh;
   }
 
   .navbar-menu {
@@ -77,6 +111,7 @@
 
   .navbar-menu-icon {
     display: block;
+    z-index: 100;
   }
 }
 
@@ -85,5 +120,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+  }
+
+  .navbar-menu-container,
+  .navbar-menu-container-open {
+    padding: 32px;
   }
 }

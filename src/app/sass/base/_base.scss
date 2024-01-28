@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import '../base/variables';
 
 * {
   margin: 0;
@@ -7,20 +9,10 @@
   text-decoration: none;
   font-family: Outfit;
   border: none;
+  outline: none;
 }
 
-.body {
-  &-wrapper {
-    width: 100%;
-  }
-  &-container {
-    max-width: 83.8888%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  .body-container {
-    max-width: 87.2%;
-  }
+body {
+  height: 3000px;
+  background-color: $brand-tertiary;
 }
