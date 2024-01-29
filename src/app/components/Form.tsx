@@ -15,7 +15,7 @@ function Form() {
         <label htmlFor="">Select Date</label>
         <input type="text" placeholder="2024" />
       </div>
-      <button className="button-primary form-button">Make An Appointment</button>
+      <button className="button-primary form-button" style={{padding: '18px 27px'}}>Make An Appointment</button>
     </form>
   );
 }

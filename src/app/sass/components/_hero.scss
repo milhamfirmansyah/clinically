@@ -53,6 +53,7 @@
 @media screen and (max-width: 1220px) {
   .hero-heading {
     width: 90%;
+    font-size: 72px;
   }
 
   .hero-p {
@@ -64,6 +65,7 @@
   .hero-heading {
     width: 100%;
     padding-top: 36px;
+    font-size: 64px;
   }
 
   .hero-p {
@@ -83,5 +85,20 @@
 
   .hero-content {
     gap: 24px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-heading {
+    font-size: 56px;
+  }
+
+  .hero-p {
+    font-size: 18px;
+  }
+
+  .hero-content {
+    margin-bottom: 16px;
   }
 }

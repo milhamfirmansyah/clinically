@@ -26,8 +26,8 @@ function Navbar() {
             <Link href="#">Pages</Link>
           </div>
           <div className="navbar-right">
-            <button className="button-white">Login</button>
-            <button className="button-primary">Book Now</button>
+            <button className="button-white" style={{padding: '16px 24px'}}>Login</button>
+            <button className="button-primary" style={{padding: '16px 32px'}}>Book Now</button>
           </div>
         </div>
         <Image src={menuIcon} alt="menu-icon" className="navbar-menu-icon" onClick={() => setMenu(!menu)} />

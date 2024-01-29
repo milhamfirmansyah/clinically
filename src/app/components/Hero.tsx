@@ -1,5 +1,7 @@
 import React from 'react';
 import Form from './Form';
+import hospital from '../assets/hospital.png';
+import Image from 'next/image';
 
 function Hero() {
   return (
@@ -13,6 +15,7 @@ function Hero() {
         </div>
         <Form />
       </div>
+      <Image src={hospital} alt='hospital' style={{width: '100%', height: 'auto'}}/>
     </div>
   );
 }
