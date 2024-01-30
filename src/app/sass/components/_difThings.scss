@@ -1,0 +1,147 @@
+.dif-things {
+  padding: 88px 0 96px 0;
+  display: flex;
+
+  &__left {
+    width: 44.1666%;
+    padding: 120px 2.708% 0 8.05555%;
+    background-color: $base-white;
+
+    & h1 {
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      color: $text-darker;
+      margin-bottom: 24px;
+    }
+
+    & p {
+      font-family: Outfit;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      color: $text-dark;
+    }
+  }
+
+  &__right {
+    width: 55.8334%;
+    padding: 88px 8.05555% 128px 8.3333%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &__card {
+    padding: 32px;
+
+    & h2 {
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      color: $text-darker;
+      margin-bottom: 8px;
+    }
+
+    & p {
+      font-family: Outfit;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      color: $text-dark;
+    }
+  }
+
+  &__icon-container {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-1 {
+      background-color: #c9c8f0;
+    }
+    &-2 {
+      background-color: #b3edea;
+    }
+    &-3 {
+      background-color: #f9e5b5;
+    }
+    &-4 {
+      background-color: #bcdef7;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .dif-things__left {
+    padding-left: 6.4%;
+  }
+
+  .dif-things__right {
+    padding-right: 6.4%;
+    padding-left: 4%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dif-things__card {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dif-things {
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 0;
+
+    &__left {
+      width: 100%;
+      padding-right: 6.4%;
+      padding-bottom: 36px;
+
+      & h1,
+      & p {
+        text-align: center;
+      }
+    }
+
+    &__right {
+      width: 100%;
+      padding-left: 4.6%;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dif-things__left h1 {
+    font-size: 34px;
+    margin-bottom: 16px;
+    line-height: 130%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dif-things__right {
+    grid-template-columns: 1fr;
+    background-color: $base-white;
+    grid-gap: 24px;
+  }
+
+  .dif-things__card {
+    background-color: $brand-tertiary;
+    border-radius: 2px;
+  }
+}
