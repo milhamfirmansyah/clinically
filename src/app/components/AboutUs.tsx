@@ -20,7 +20,7 @@ function AboutUs() {
           <Image src={videoButton} alt="video-button" className="video-button" />
         </div>
       </div>
-      <Image src={pattern} alt="pattern" className='pattern'/>
+      <Image src={pattern} alt="pattern" className="pattern" />
     </section>
   );
 }

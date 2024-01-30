@@ -61,10 +61,15 @@
   }
 }
 
+@media screen and (max-width: 1080px) {
+  .hero-heading {
+    padding-top: 36px;
+  }
+}
+
 @media screen and (max-width: 940px) {
   .hero-heading {
     width: 100%;
-    padding-top: 36px;
     font-size: 64px;
   }
 

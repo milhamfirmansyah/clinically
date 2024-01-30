@@ -1,0 +1,144 @@
+.services {
+  width: 100%;
+  padding: 88px 0 160px 0;
+  background-color: $base-white;
+
+  &-container {
+    max-width: 83.8888%;
+    margin: 0 auto;
+    @include flexbox(flex-start, 5.298%);
+  }
+
+  &-left {
+    width: 39.735%;
+
+    & h3 {
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      color: $text-darker;
+      margin-bottom: 24px;
+    }
+
+    & p {
+      font-family: Outfit;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      color: $text-dark;
+      margin-bottom: 40px;
+    }
+  }
+
+  &-right {
+    display: grid;
+    width: 56.9654%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    & div:not(.white) {
+      background-color: $brand-tertiary;
+    }
+  }
+
+  &-card {
+    padding: 24px;
+    border-radius: 2px;
+
+    & h4 {
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      color: $text-darker;
+      margin-bottom: 2px;
+    }
+
+    & p {
+      font-family: Outfit;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      color: $text-dark;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .services-container {
+    max-width: 87.2%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .services-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%;
+  }
+
+  .services-left {
+    @include flexbox(flex-start, 3%);
+  }
+
+  .services-left-1,
+  .services-left-2 {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services {
+    padding: 0 0 64px 0;
+  }
+
+  .services-left h3 {
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+
+  .services-left p {
+    margin-bottom: 24px;
+  }
+
+  .services-left {
+    flex-direction: column;
+  }
+
+  .services-left-2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services-left h3 {
+    font-size: 28px;
+    line-height: 130%;
+  }
+
+  .services-right {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .services-card {
+    padding: 16px;
+  }
+
+  .services-right div:not(.white) {
+    background-color: $base-white;
+  }
+
+  .services-right div:nth-child(odd) {
+    background-color: $brand-tertiary !important;
+  }
+}
