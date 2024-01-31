@@ -1,6 +1,7 @@
 .cta {
   width: 100%;
   padding: 48px 0 108px 0;
+  background-color: $base-white;
 
   &-container {
     max-width: 83.8888%;
@@ -80,10 +81,15 @@
 }
 
 @media screen and (max-width: 1020px) {
+  .cta {
+    padding: 0;
+  }
+
   .cta-container {
     flex-direction: column;
     padding: 64px 64px 0 64px;
     gap: 24px;
+    max-width: 100%;
   }
 
   .cta-left,
@@ -114,7 +120,7 @@
     padding: 36px 36px 0 36px;
   }
 
-  .cta-left h1{
+  .cta-left h1 {
     font-size: 36px;
   }
 }
@@ -124,16 +130,16 @@
     padding: 24px 24px 0 24px;
   }
 
-  .cta-left h1{
+  .cta-left h1 {
     font-size: 28px;
   }
 
-  .cta-button-container{
+  .cta-button-container {
     flex-direction: column;
     gap: 16px;
 
-    & button{
-        width: 100%;
+    & button {
+      width: 100%;
     }
   }
 }
