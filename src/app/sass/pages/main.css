@@ -681,3 +681,122 @@ body {
     border-radius: 2px;
   }
 }
+.cta {
+  width: 100%;
+  padding: 48px 0 108px 0;
+}
+.cta-container {
+  max-width: 83.8888%;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.662%;
+  background-color: #1e5dbc;
+}
+.cta-left {
+  width: 38.41%;
+  padding: 88px 0 88px 88px;
+}
+.cta-left h1 {
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.cta-left p {
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.cta-right {
+  width: 60.928%;
+  position: relative;
+}
+.cta-right img {
+  width: 94.293%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.cta-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.821%;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1417px) {
+  .cta-left,
+  .cta-right {
+    width: 49.2%;
+  }
+  .cta-left {
+    padding: 64px 0 64px 64px;
+  }
+  .cta-right img {
+    width: 100%;
+  }
+  .cta-container {
+    gap: 0.6%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .cta-container {
+    max-width: 87.2%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .cta-container {
+    flex-direction: column;
+    padding: 64px 64px 0 64px;
+    gap: 24px;
+  }
+  .cta-left,
+  .cta-right {
+    width: 100%;
+  }
+  .cta-left {
+    padding: 0;
+  }
+  .cta-left h1 {
+    margin-bottom: 0;
+  }
+  .cta-left p {
+    margin-bottom: 16px;
+  }
+  .cta-right img {
+    position: static;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cta-container {
+    padding: 36px 36px 0 36px;
+  }
+  .cta-left h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cta-container {
+    padding: 24px 24px 0 24px;
+  }
+  .cta-left h1 {
+    font-size: 28px;
+  }
+  .cta-button-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .cta-button-container button {
+    width: 100%;
+  }
+}
