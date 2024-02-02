@@ -554,7 +554,7 @@ body {
   }
 }
 .dif-things {
-  padding: 88px 0 96px 0;
+  padding: 88px 0 0 0;
   display: flex;
 }
 .dif-things__left {
@@ -664,6 +664,9 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
+  .dif-things {
+    padding-bottom: 48px;
+  }
   .dif-things__left h1 {
     font-size: 34px;
     margin-bottom: 16px;
@@ -948,5 +951,101 @@ body {
   }
   .footer-utility-pages-container {
     gap: 20%;
+  }
+}
+.testi {
+  padding: 88px 0;
+  width: 100%;
+}
+.testi__container {
+  max-width: 83.8888%;
+  margin: 0 auto;
+}
+.testi__container h1 {
+  text-align: center;
+  max-width: 584px;
+  margin: 0 auto;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #0f2f64;
+  margin-bottom: 56px;
+}
+.testi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.testi-card {
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #e7e4e4;
+}
+.testi-card p {
+  font-size: 20px;
+  color: #0f2f64;
+  font-family: Outfit;
+  line-height: 160%;
+}
+.testi-card-profil {
+  display: flex;
+  gap: 6.298%;
+  margin-bottom: 16px;
+}
+.testi-card-profil img {
+  width: 48px;
+}
+.testi-card-profil .span-1 {
+  font-size: 24px;
+  color: #0f2f64;
+  font-family: Outfit;
+}
+.testi-card-profil .span-2 {
+  font-size: 20px;
+  color: #536288;
+  font-family: Outfit;
+}
+
+@media screen and (max-width: 1140px) {
+  .testi__container {
+    max-width: 87.2%;
+  }
+  .testi-grid {
+    grid-gap: 32px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .testi__container h1 {
+    font-size: 36px;
+  }
+  .testi-grid {
+    grid-gap: 24px;
+  }
+  .testi-card .span-1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .testi-card .span-2,
+  .testi-card p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .testi {
+    padding: 0 0 48px 0;
+  }
+  .testi__container {
+    overflow-x: hidden;
+  }
+  .testi__container h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .testi-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .testi-card {
+    width: 280px;
   }
 }

@@ -1,0 +1,115 @@
+.testi {
+  padding: 88px 0;
+  width: 100%;
+
+  &__container {
+    max-width: 83.8888%;
+    margin: 0 auto;
+
+    & h1 {
+      text-align: center;
+      max-width: 584px;
+      margin: 0 auto;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 120%;
+      color: $text-darker;
+      margin-bottom: 56px;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  &-card {
+    background-color: $base-white;
+    padding: 16px;
+    border: 1px solid #e7e4e4;
+
+    & p {
+      font-size: 20px;
+      color: $text-darker;
+      font-family: Outfit;
+      line-height: 160%;
+    }
+
+    &-profil {
+      display: flex;
+      gap: 6.298%;
+      margin-bottom: 16px;
+
+      & img {
+        width: 48px;
+      }
+
+      & .span-1 {
+        font-size: 24px;
+        color: $text-darker;
+        font-family: Outfit;
+      }
+
+      & .span-2 {
+        font-size: 20px;
+        color: $text-dark;
+        font-family: Outfit;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .testi__container {
+    max-width: 87.2%;
+  }
+
+  .testi-grid {
+    grid-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .testi__container h1 {
+    font-size: 36px;
+  }
+
+  .testi-grid {
+    grid-gap: 24px;
+  }
+
+  .testi-card .span-1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .testi-card .span-2,
+  .testi-card p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .testi{
+        padding: 0 0 48px 0;
+    }
+
+  .testi__container {
+    overflow-x: hidden;
+
+    & h1{
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .testi-card {
+    width: 280px;
+  }
+}
