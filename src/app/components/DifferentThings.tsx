@@ -4,6 +4,8 @@ import Dif2 from '../assets/dif-things-2.png';
 import Dif3 from '../assets/dif-things-3.png';
 import Dif4 from '../assets/dif-things-4.png';
 import Image from 'next/image';
+import pattern1 from '../assets/dif pattern 1.png';
+import pattern2 from '../assets/dif pattern 2.png';
 
 function DifferentThings() {
   return (
@@ -43,6 +45,8 @@ function DifferentThings() {
           <p>Lorem ipsum dolor sit amet, ad vix fuisset assentior. Vim dicit lobortis molestiae no, </p>
         </div>
       </div>
+      <Image src={pattern1} alt='dif pattern 1' className='dif-pattern-1'/>
+      <Image src={pattern2} alt='dif pattern 2' className='dif-pattern-2'/>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import photo1 from '../assets/testi-photo-1.png';
 import Image from 'next/image';
+import pattern from '../assets/testi pattern.png'
 
 function Testi() {
   return (
@@ -82,6 +83,7 @@ function Testi() {
           </div>
         </div>
       </div>
+      <Image src={pattern} alt='testi pattern' className='testi-pattern'/>
     </section>
   );
 }

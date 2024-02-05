@@ -1,5 +1,6 @@
 .dif-things {
   display: flex;
+  position: relative;
 
   &__left {
     width: 44.1666%;
@@ -81,6 +82,22 @@
   }
 }
 
+.dif-pattern-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5.555%;
+  height: auto;
+}
+
+.dif-pattern-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 16.08%;
+  height: auto;
+}
+
 @media screen and (max-width: 1140px) {
   .dif-things__left {
     padding-left: 6.4%;
@@ -120,6 +137,10 @@
       padding-top: 0;
       padding-bottom: 0;
     }
+  }
+
+  .dif-pattern-1, .dif-pattern-2{
+    display: none;
   }
 }
 

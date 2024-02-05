@@ -9,6 +9,7 @@ import servicesIcon5 from '../assets/services icon 5.jpg';
 import servicesIcon6 from '../assets/services icon 6.jpg';
 import servicesIcon7 from '../assets/services icon 7.jpg';
 import servicesIcon8 from '../assets/services icon 8.jpg';
+import pattern from '../assets/services pattern.png';
 
 function Services() {
   return (
@@ -20,7 +21,8 @@ function Services() {
             <p>We believe in technology and our team to take care of your health problems. We guarantee you will get the best service that you have never experienced before</p>
           </div>
           <div className='services-left-2'>
-            <Image src={serviceImage} alt="service-image" style={{ width: '100%', height: 'auto' }} />
+            <Image src={serviceImage} alt="service-image" style={{ width: '100%', height: 'auto', zIndex: '90' }} />
+            {/* <Image src={pattern} alt='service-pattern' className='services-pattern' style={{zIndex: '0'}}/> */}
           </div>
         </div>
 

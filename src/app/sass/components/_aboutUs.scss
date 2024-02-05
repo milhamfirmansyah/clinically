@@ -61,6 +61,15 @@
   height: auto;
 }
 
+.about-us-pattern-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 14.236%;
+  height: auto;
+}
+
 @media screen and (max-width: 1140px) {
   .about-us__container {
     max-width: 87.2%;
@@ -113,7 +122,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .pattern{
+  .pattern {
     width: 6.4%;
   }
 }

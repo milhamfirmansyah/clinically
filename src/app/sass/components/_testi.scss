@@ -1,6 +1,7 @@
 .testi {
   padding: 88px 0;
   width: 100%;
+  position: relative;
 
   &__container {
     max-width: 83.8888%;
@@ -59,6 +60,14 @@
       }
     }
   }
+
+  &-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12.569%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -92,16 +101,16 @@
 }
 
 @media screen and (max-width: 700px) {
-    .testi{
-        padding: 0 0 48px 0;
-    }
+  .testi {
+    padding: 0 0 48px 0;
+  }
 
   .testi__container {
     overflow-x: hidden;
 
-    & h1{
-        font-size: 28px;
-        margin-bottom: 24px;
+    & h1 {
+      font-size: 28px;
+      margin-bottom: 24px;
     }
   }
 
@@ -111,5 +120,9 @@
 
   .testi-card {
     width: 280px;
+  }
+
+  .testi-pattern {
+    display: none;
   }
 }

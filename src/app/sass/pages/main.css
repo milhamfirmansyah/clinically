@@ -380,6 +380,15 @@ body {
   height: auto;
 }
 
+.about-us-pattern-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 14.236%;
+  height: auto;
+}
+
 @media screen and (max-width: 1140px) {
   .about-us__container {
     max-width: 87.2%;
@@ -459,6 +468,18 @@ body {
   line-height: 160%;
   color: #536288;
   margin-bottom: 40px;
+}
+.services-left-2 {
+  position: relative;
+}
+.services-pattern {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 46.372%;
+  height: auto;
+  transform: translate(-51.6%, 44.074%);
+  z-index: 0 !important;
 }
 .services-right {
   display: grid;
@@ -555,6 +576,7 @@ body {
 }
 .dif-things {
   display: flex;
+  position: relative;
 }
 .dif-things__left {
   width: 44.1666%;
@@ -627,6 +649,22 @@ body {
   background-color: #bcdef7;
 }
 
+.dif-pattern-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5.555%;
+  height: auto;
+}
+
+.dif-pattern-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 16.08%;
+  height: auto;
+}
+
 @media screen and (max-width: 1140px) {
   .dif-things__left {
     padding-left: 6.4%;
@@ -659,6 +697,9 @@ body {
     padding-left: 4.6%;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .dif-pattern-1, .dif-pattern-2 {
+    display: none;
   }
 }
 @media screen and (max-width: 700px) {
@@ -954,6 +995,7 @@ body {
 .testi {
   padding: 88px 0;
   width: 100%;
+  position: relative;
 }
 .testi__container {
   max-width: 83.8888%;
@@ -1004,6 +1046,13 @@ body {
   color: #536288;
   font-family: Outfit;
 }
+.testi-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12.569%;
+  height: auto;
+}
 
 @media screen and (max-width: 1140px) {
   .testi__container {
@@ -1045,6 +1094,9 @@ body {
   }
   .testi-card {
     width: 280px;
+  }
+  .testi-pattern {
+    display: none;
   }
 }
 .appointment {
@@ -1131,6 +1183,7 @@ body {
   font-weight: 400;
   line-height: 160%;
   color: #536288;
+  z-index: 90 !important;
 }
 .appointment__right .pattern-1 {
   position: absolute;
@@ -1138,6 +1191,7 @@ body {
   right: 0;
   width: 18.364%;
   height: auto;
+  z-index: 0;
 }
 .appointment__right .pattern-2 {
   position: absolute;

@@ -89,6 +89,7 @@
         font-weight: 400;
         line-height: 160%;
         color: $text-dark;
+        z-index: 90 !important;
       }
     }
 
@@ -98,6 +99,7 @@
       right: 0;
       width: 18.364%;
       height: auto;
+      z-index: 0;
     }
 
     & .pattern-2 {

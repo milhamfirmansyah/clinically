@@ -1,5 +1,5 @@
 import React from 'react';
-import pattern1 from '../assets/appointment pattern 1.jpg';
+import pattern1 from '../assets/appointment pattern 1.png';
 import pattern2 from '../assets/appointment pattern 2.jpg';
 import pattern3 from '../assets/appointment pattern 3.jpg';
 import Image from 'next/image';

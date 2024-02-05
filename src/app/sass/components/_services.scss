@@ -31,6 +31,20 @@
       color: $text-dark;
       margin-bottom: 40px;
     }
+
+    &-2 {
+      position: relative;
+    }
+  }
+
+  &-pattern {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 46.372%;
+    height: auto;
+    transform: translate(-51.6%, 44.074%);
+    z-index: 0 !important;
   }
 
   &-right {
