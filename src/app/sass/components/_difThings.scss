@@ -1,5 +1,4 @@
 .dif-things {
-  padding: 88px 0 0 0;
   display: flex;
 
   &__left {
@@ -102,12 +101,11 @@
 @media screen and (max-width: 900px) {
   .dif-things {
     flex-direction: column;
-    padding-top: 48px;
-    padding-bottom: 0;
 
     &__left {
       width: 100%;
       padding-right: 6.4%;
+      padding-top: 48px;
       padding-bottom: 36px;
 
       & h1,
