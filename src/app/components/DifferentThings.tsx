@@ -11,7 +11,7 @@ function DifferentThings() {
   return (
     <section className="dif-things">
       <div className="dif-things__left">
-        <h1>Here's what makes us different from conventional clinics</h1>
+        <h1>Here&apos;s what makes us different from conventional clinics</h1>
         <p>We are brave compared to other clinics, because we believe that what we have is the best</p>
       </div>
 
