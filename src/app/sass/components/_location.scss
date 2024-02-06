@@ -1,0 +1,110 @@
+.location {
+  padding: 160px 8.0555% 88px 8.0555%;
+  background-color: $base-white;
+
+  h1 {
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    color: $text-darker;
+    text-align: center;
+    margin-bottom: 48px;
+
+    span {
+      color: $brand-primary;
+    }
+  }
+
+  .location-card {
+    padding-bottom: 72px;
+
+    img,
+    h2,
+    .location-p-container {
+      padding: 0 20px;
+    }
+
+    .location-p-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-size: 18px;
+        color: $text-dark;
+      }
+    }
+
+    img {
+      margin-bottom: 24px;
+      border-radius: 2px;
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+      color: $text-darker;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .location {
+    padding: 160px 6.4% 88px 6.4%;
+
+    .location-card {
+      padding-bottom: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .location {
+    padding: 100px 6.4% 64px 6.4%;
+
+    .location-card {
+      padding-bottom: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .location {
+    padding: 88px 6.4% 48px 6.4%;
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 32px;
+    }
+
+    .location-card {
+      padding-bottom: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .location {
+    padding: 40px 6.4% 48px 6.4%;
+
+    h1 {
+      font-size: 28px;
+      text-align: left;
+      margin-bottom: 24px;
+
+      span {
+        display: block;
+        text-decoration: underline;
+      }
+    }
+
+    .location-card {
+      padding-bottom: 32px;
+    }
+  }
+}
