@@ -1,15 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
-import serviceImage from '../assets/Rectangle 4183.jpg';
-import servicesIcon1 from '../assets/services icon 1.jpg';
-import servicesIcon2 from '../assets/services icon 2.jpg';
-import servicesIcon3 from '../assets/services icon 3.jpg';
-import servicesIcon4 from '../assets/services icon 4.jpg';
-import servicesIcon5 from '../assets/services icon 5.jpg';
-import servicesIcon6 from '../assets/services icon 6.jpg';
-import servicesIcon7 from '../assets/services icon 7.jpg';
-import servicesIcon8 from '../assets/services icon 8.jpg';
-import pattern from '../assets/services pattern.png';
+import serviceImage from '../assets/Rectangle 4183.svg';
+import servicesIcon1 from '../assets/services-icon1.svg';
+import servicesIcon2 from '../assets/services-icon2.svg';
+import servicesIcon3 from '../assets/services-icon3.svg';
+import servicesIcon4 from '../assets/services-icon4.svg';
+import servicesIcon5 from '../assets/services-icon5.svg';
+import servicesIcon6 from '../assets/services-icon6.svg';
+import servicesIcon7 from '../assets/services-icon7.svg';
+import servicesIcon8 from '../assets/services-icon8.svg';
 
 function Services() {
   return (
@@ -17,12 +16,11 @@ function Services() {
       <div className="services-container">
         <div className="services-left">
           <div className='services-left-1'>
-            <h3>We provide a modern service care</h3>
+            <h2>We provide a modern service care</h2>
             <p>We believe in technology and our team to take care of your health problems. We guarantee you will get the best service that you have never experienced before</p>
           </div>
           <div className='services-left-2'>
             <Image src={serviceImage} alt="service-image" style={{ width: '100%', height: 'auto', zIndex: '90' }} />
-            {/* <Image src={pattern} alt='service-pattern' className='services-pattern' style={{zIndex: '0'}}/> */}
           </div>
         </div>
 
@@ -53,7 +51,7 @@ function Services() {
             <p>treat neurological problems in a professional manner</p>
           </div>
           <div className="services-card white">
-            <Image src={servicesIcon6} alt="services-icon-6" style={{ width: '27.3333px', height: 'auto', marginBottom: '16px' }} />
+            <Image src={servicesIcon6} alt="services-icon-6" style={{ width: '18px', height: 'auto', marginBottom: '16px' }} />
             <h4>Cardiology</h4>
             <p>Ftreat heart problems with modern technology</p>
           </div>

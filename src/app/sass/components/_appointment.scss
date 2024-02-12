@@ -6,7 +6,7 @@
     padding: 88px 7.222% 226px 8.05%;
     position: relative;
 
-    & h1 {
+    & h2 {
       font-size: 40px;
       line-height: 120%;
       font-family: Inter;
@@ -73,6 +73,8 @@
     }
 
     &-content {
+      z-index: 90;
+
       h2 {
         font-family: Inter;
         color: $text-darker;
@@ -127,7 +129,7 @@
 }
 
 @media screen and (max-width: 1060px) {
-  .appointment__left h1 {
+  .appointment__left h2 {
     font-size: 32px;
     margin-bottom: 16px;
   }
@@ -164,7 +166,7 @@
     padding: 0;
   }
 
-  .appointment-button-left h1 {
+  .appointment__left h2 {
     font-size: 28px;
   }
 

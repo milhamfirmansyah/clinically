@@ -1,14 +1,14 @@
 import React from 'react';
-import pattern1 from '../assets/appointment pattern 1.png';
-import pattern2 from '../assets/appointment pattern 2.jpg';
-import pattern3 from '../assets/appointment pattern 3.jpg';
+import pattern1 from '../assets/appointment-pattern1.svg';
+import pattern2 from '../assets/appointment-pattern2.svg';
+import pattern3 from '../assets/appointment-pattern3.svg';
 import Image from 'next/image';
 
 function Appointment() {
   return (
     <section className="appointment">
       <div className="appointment__left">
-        <h1>How to make an appointment?</h1>
+        <h2>How to make an appointment?</h2>
         <p>We are brave compared to other clinics, because we believe that what we have is the best</p>
         <button className="button-primary appointment-button-left" style={{ padding: '16px 24px' }}>
           Make an Appointment

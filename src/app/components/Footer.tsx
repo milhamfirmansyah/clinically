@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import logo from '../assets/Logo.jpg';
+import logo from '../assets/Logo (4).svg';
 import Link from 'next/link';
 
 function Footer() {
@@ -8,10 +8,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <div className="logo-container">
+          <Link href={'#'} className="logo-container">
             <Image src={logo} alt="logo" style={{ width: '46px', height: '46px' }} />
             <span>Clinically</span>
-          </div>
+          </Link>
           <p className="footer-email">hello@designmate.co</p>
           <p className="footer-telp">(704) 555-0127</p>
         </div>

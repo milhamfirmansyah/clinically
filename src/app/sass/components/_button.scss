@@ -8,6 +8,11 @@
   line-height: 160%; /* 25.6px */
   letter-spacing: 0.32px;
   cursor: pointer;
+  transition: all .2s;
+
+  &:hover{
+    background-color: $text-darker;
+  }
 }
 
 .button-white {
@@ -21,4 +26,10 @@
   letter-spacing: 0.32px;
   cursor: pointer;
   border: 1px solid $brand-primary;
+  transition: all .2s;
+
+  &:hover{
+    background-color: $brand-secondary;
+    color: $base-white;
+  }
 }

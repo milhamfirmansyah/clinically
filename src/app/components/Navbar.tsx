@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
-import logo from '../assets/Logo.jpg';
-import menuIcon from '../assets/menu.jpg';
+import logo from '../assets/Logo (4).svg';
+import menuIcon from '../assets/menu (1).svg';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -25,14 +25,21 @@ function Navbar() {
             <Link href="#">Careers</Link>
             <Link href="#">Pages</Link>
           </div>
+          <button className={menu ? 'close-button' : 'close-button-none'} onClick={() => setMenu(false)}>
+            Close
+          </button>
           <div className="navbar-right">
-            <button className="button-white" style={{padding: '16px 24px'}}>Login</button>
-            <button className="button-primary" style={{padding: '16px 32px'}}>Book Now</button>
+            <button className="button-white" style={{ padding: '16px 24px' }}>
+              Login
+            </button>
+            <button className="button-primary" style={{ padding: '16px 32px' }}>
+              Book Now
+            </button>
           </div>
         </div>
-        <Image src={menuIcon} alt="menu-icon" className="navbar-menu-icon" onClick={() => setMenu(!menu)} />
+        <Image src={menuIcon} alt="menu-icon" className="navbar-menu-icon" onClick={() => setMenu(true)} />
       </div>
-      <div className={menu ? "navbar-menu-open-background" : "navbar-menu-close-background"}></div>
+      <div className={menu ? 'navbar-menu-open-background' : 'navbar-menu-close-background'}></div>
     </div>
   );
 }

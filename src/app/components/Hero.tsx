@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from './Form';
-import hospital from '../assets/hospital.png';
+import hospital from '../assets/hospital.svg';
 import Image from 'next/image';
 
 function Hero() {

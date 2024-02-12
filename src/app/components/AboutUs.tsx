@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-import videoBackground from '../assets/Rectangle 4193.jpg';
-import videoButton from '../assets/Button.jpg';
-import pattern from '../assets/pattern.jpg';
-import pattern2 from '../assets/about us pattern 2.png';
+import videoBackground from '../assets/Rectangle 4193.svg';
+import videoButton from '../assets/Button.svg';
+import pattern from '../assets/aboutus-pattern1.svg';
+import pattern2 from '../assets/aboutus-pattern2.svg';
 
 function AboutUs() {
   return (

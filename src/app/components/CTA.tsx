@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
-import ctaImage from '../assets/cta-image.png'
+import ctaImage from '../assets/cta.svg'
 
 function CTA() {
   return (
     <section className="cta">
       <div className="cta-container">
         <div className="cta-left">
-          <h1>We care whenever you need it</h1>
+          <h2>We care whenever you need it</h2>
           <p>Lorem ipsum dolor sit amet consectetur. Fermentum eget sapien velit vitae dignissim urna laoreet.</p>
           <div className="cta-button-container">
             <button className="button-white" style={{ padding: '16px 24px' }}>

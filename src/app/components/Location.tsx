@@ -3,12 +3,13 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import image1 from '../assets/carousel image 1.jpg';
-import image2 from '../assets/carousel image 2.png';
-import image3 from '../assets/carousel image 3.jpg';
-import image4 from '../assets/carousel image 4.jpg';
+import image1 from '../assets/carousel-image1.svg';
+import image2 from '../assets/carousel-image2.svg';
+import image3 from '../assets/carousel-image3.svg';
+import image4 from '../assets/carousel-image4.svg';
 import Image from 'next/image';
 import { FiArrowRight } from 'react-icons/fi';
+import Link from 'next/link';
 
 function Location() {
   var settings = {
@@ -53,70 +54,70 @@ function Location() {
       </h1>
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="location-card">
+          <Link href={'#'} className="location-card">
             <Image src={image1} alt="carousel image 1" />
             <h2>Downtown San Diego</h2>
             <div className="location-p-container">
               <p>2715 Ash Dr, San Jose, San Diego...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
-          <div className="location-card">
+          </Link>
+          <Link href={'#'} className="location-card">
             <Image src={image2} alt="carousel image 2" />
             <h2>Sacramento City</h2>
             <div className="location-p-container">
               <p>4140 Parker Rd, Allentown, Sacr...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
-          <div className="location-card">
+          </Link>
+          <Link href={'#'} className="location-card">
             <Image src={image3} alt="carousel image 3" />
             <h2>Citrus Height</h2>
             <div className="location-p-container">
               <p>8502 Preston Rd, Inglewood, Sacr...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
-          <div className="location-card">
+          </Link>
+          <Link href={'#'} className="location-card">
             <Image src={image4} alt="carousel image 4" />
             <h2>Santa Clara</h2>
             <div className="location-p-container">
               <p>8502 Preston Rd, Inglewood, Sacr...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
-          <div className="location-card">
+          </Link>
+          <Link href={'#'} className="location-card">
             <Image src={image1} alt="carousel image 1" />
             <h2>Downtown San Diego</h2>
             <div className="location-p-container">
               <p>2715 Ash Dr, San Jose, San Diego...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
-          <div className="location-card">
+          </Link>
+          <Link href={'#'} className="location-card">
             <Image src={image2} alt="carousel image 2" />
             <h2>Sacramento City</h2>
             <div className="location-p-container">
               <p>4140 Parker Rd, Allentown, Sacr...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
-          <div className="location-card">
+          </Link>
+          <Link href={'#'} className="location-card">
             <Image src={image3} alt="carousel image 3" />
             <h2>Citrus Height</h2>
             <div className="location-p-container">
               <p>8502 Preston Rd, Inglewood, Sacr...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
-          <div className="location-card">
+          </Link>
+          <Link href={'#'} className="location-card">
             <Image src={image4} alt="carousel image 4" />
             <h2>Santa Clara</h2>
             <div className="location-p-container">
               <p>8502 Preston Rd, Inglewood, Sacr...</p>
               <FiArrowRight style={{ fontSize: '24px', color: '262F56' }} />
             </div>
-          </div>
+          </Link>
         </Slider>
       </div>
     </section>

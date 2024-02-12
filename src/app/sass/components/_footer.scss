@@ -64,6 +64,12 @@
     font-weight: 400;
     line-height: 160%;
     color: $text-dark;
+    transition: all .3s;
+
+    &:hover{
+      color: $text-darker;
+      text-decoration: underline;
+    }
   }
 
   &-utility-pages-container {

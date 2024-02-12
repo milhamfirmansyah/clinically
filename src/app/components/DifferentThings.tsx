@@ -1,11 +1,11 @@
 import React from 'react';
-import Dif1 from '../assets/dif-things-1.png';
-import Dif2 from '../assets/dif-things-2.png';
-import Dif3 from '../assets/dif-things-3.png';
-import Dif4 from '../assets/dif-things-4.png';
+import Dif1 from '../assets/dif-icon1.svg';
+import Dif2 from '../assets/dif-icon2.svg';
+import Dif3 from '../assets/dif-icon3.svg';
+import Dif4 from '../assets/dif-icon4.svg';
 import Image from 'next/image';
-import pattern1 from '../assets/dif pattern 1.png';
-import pattern2 from '../assets/dif pattern 2.png';
+import pattern1 from '../assets/dif-pattern1.svg';
+import pattern2 from '../assets/dif-pattern2.svg';
 
 function DifferentThings() {
   return (
