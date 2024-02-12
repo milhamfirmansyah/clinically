@@ -317,13 +317,13 @@ body {
   line-height: 160%;
   color: #8B98B8;
 }
-.form-input-container input {
+.form-input-container input, .form-input-container select {
   border: 1px solid #E1E3E8;
   width: 100%;
   border-radius: 6px;
   padding: 16px 24px;
 }
-.form-input-container input, .form-input-container input::placeholder {
+.form-input-container input, .form-input-container input::placeholder, .form-input-container select, .form-input-container select::placeholder {
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
@@ -799,7 +799,7 @@ body {
   position: relative;
 }
 .cta-right img {
-  width: 94.293%;
+  width: 100%;
   height: auto;
   position: absolute;
   left: 0;
@@ -820,9 +820,6 @@ body {
   }
   .cta-left {
     padding: 64px 0 64px 64px;
-  }
-  .cta-right img {
-    width: 100%;
   }
   .cta-container {
     gap: 0.6%;
@@ -857,7 +854,6 @@ body {
   }
   .cta-right img {
     position: static;
-    width: 100%;
     transform: translateY(5px);
   }
 }
